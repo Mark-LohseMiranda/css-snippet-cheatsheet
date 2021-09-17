@@ -1,0 +1,93 @@
+* {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: lavender;
+}
+
+html {
+    background: #36454F;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+header p {
+    color: lightcoral;
+    padding-top: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 31%;
+    position: relative;
+    border: 1px dashed white;
+    margin: 1%;
+    display: flex;
+    flex-flow: column;
+}
+
+.title {
+    border: 1px solid white;
+    position: relative;
+    bottom: 10px;
+    background: #36454F;
+    padding-left: 5px;
+}
+
+.title .box {
+    transition: all 0.2s ease-in-out;
+    color: pink;
+}
+
+.title:hover, .box:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, .4);
+}
+
+.box p, .title, pre {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+code {
+    font-size: 14px;
+}
+
+pre {
+    border-radius: 10px;
+    background: rgb(243, 45, 253);
+    background: linear-gradient(0deg, rgba(243, 45, 253, 1) 0%, rgba(0, 0, 0, 1) 130%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .box {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
